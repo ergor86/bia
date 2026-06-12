@@ -1,6 +1,6 @@
 services:
   server:
-    image: 632872792512.dkr.ecr.us-east-1.amazonaws.com/bia:{TAG}
+    image: 632872792512.dkr.ecr.us-east-1.amazonaws.com/bia:${TAG}
     container_name: bia
     ports:
       - 80:8080
