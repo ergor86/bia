@@ -1,0 +1,12 @@
+services:
+  server:
+    image: 632872792512.dkr.ecr.us-east-1.amazonaws.com/bia:{TAG}
+    container_name: bia
+    ports:
+      - 80:8080
+    environment:
+      DB_USER: postgres
+      DB_PWD: MCtADzvpw1eUI8cp7uAS
+      DB_PORT: 5432
+      DB_HOST: rds-bia-beanstalk.cmrs262sykb3.us-east-1.rds.amazonaws.com
+   
