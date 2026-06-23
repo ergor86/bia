@@ -5,8 +5,7 @@ services:
     ports:
       - 80:8080
     environment:
-      DB_USER: postgres
-      DB_PWD: MCtADzvpw1eUI8cp7uAS
       DB_PORT: 5432
-      DB_HOST: rds-bia-beanstalk.cmrs262sykb3.us-east-1.rds.amazonaws.com
-   
+      DB_HOST: bia-db-loadbalancer.cmrs262sykb3.us-east-1.rds.amazonaws.com
+      DB_SECRET_NAME: rds!db-4cebde56-b851-4e9c-ab8f-ab20a80427f0
+      DB_REGION: us-east-1

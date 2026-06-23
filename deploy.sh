@@ -1,3 +1,3 @@
 ./build.sh
 
-eb deploy Bia-beanstalk-env --staged
+eb deploy Bia-dev-loadbalancer-env --staged
