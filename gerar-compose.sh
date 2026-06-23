@@ -11,7 +11,7 @@ docker compose -f compose-eb.yml config --no-normalize > compose-dev.yml
 sed -i '/^name:/d' compose-dev.yml
 
 #Adiciona a linha env_file: e a linha com o caminho do arquivo de variáveis de ambiente do EB (env.list) dentro do serviço server no compose-dev.yml
-sed -i "/server:$/a\    env_file:\n      - /opt/elasticbeanstalk/deployment/env.list" compose-dev.yml
+sed -i "/server:$/a\    env_file:\n      - .env" compose-dev.yml
 
 #Substitui o compose.yml pelo arquivo com as variáveis resolvidas.
 mv compose-dev.yml compose.yml
